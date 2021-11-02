@@ -1,0 +1,130 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.section {
+  width: 90vw;
+  margin: 5rem auto;
+}
+
+@media screen and (min-width: 992px) {
+  .section {
+    width: 95vw;
+  }
+}
+
+.loading {
+  text-align: center;
+}
+
+.title {
+  text-align: center;
+  color: #140e01;
+  font-size: 2rem;
+  margin-bottom: 4rem;
+}
+
+.underline {
+  width: 5rem;
+  height: 0.25rem;
+  background-color:#2caeba;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1.25rem;
+}
+
+.container {
+  width: 80vw;
+  margin: 0 auto;
+}
+
+.btn-container {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 4rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn-job {
+  background: transparent;
+  border-color: transparent;
+  text-transform: capitalize;
+  font-size: 1.25rem;
+  letter-spacing: 1px;
+  margin: 0 0.5rem;
+  transition: all 0.3s linear;
+  line-height: 1;
+  margin: 0 0.5rem;
+  outline-color: #e0fcff;
+  cursor: pointer;
+}
+
+.btn-job:hover {
+  color:  #2caeba;
+  box-shadow: 0 2px #2caeba;
+}
+.active-btn {
+  color: #2caeba;
+  box-shadow: 0 2px #2caeba;
+}
+
+.job-info h3 {
+  font-size: 1.75rem;
+  font-weight: 400;
+  margin-top: 0;
+}
+
+.job-info h4 {
+  width: 100px;
+  text-align: center;
+  padding: 0.25rem;
+  background: #DAE2EC;
+  border-radius: 0.25rem;
+  color: #617DA5;
+  letter-spacing: 0.1rem;
+}
+
+.job-date {
+  color: #5f5c5c;
+  letter-spacing: 0.1rem;
+}
+
+.job-desc {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  column-gap: 2rem;
+  align-items: center;
+  margin-bottom: 1.25rem;
+}
+
+.job-desc p {
+  color: #324d67;
+  margin-bottom: 0;
+}
+
+.job-icon {
+  color: #2caeba;
+}
+
+@media screen and (min-width: 992px) {
+  .container {
+    widtd: 90vw;
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    column-lap: 4rem;
+  }
+  .btn-container {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .btn-job {
+    margin-bottom: 1rem;
+  }
+  .active-btn {
+    box-shadow: -2px 0 #2caeba;
+  }
+  .btn-job:hover {
+    box-shadow: -2px 0 #2caeba;
+  }
+}
